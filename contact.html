@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>株式会社ムコクリエイト｜お問い合わせ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="お気軽にお問い合わせください。" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <h1 class="logo">
+          <a href="index.html"
+            ><img src="images/logo.png" alt="株式会社 ムコクリエイト"
+          /></a>
+        </h1>
+
+        <!--メニュー-->
+        <div id="menubar">
+          <nav>
+            <!-- <a href="自分で決めたid名">名前</a> これで○○のところへ飛ぶリンクということ-->
+            <ul>
+              <li><a href="service.html">サービス紹介</a></li>
+              <!-- #○○は同じページ内を飛ぶ 下の方にばーっと動く感じ-->
+              <li><a href="company.html">会社概要</a></li>
+              <li><a href="work.html">制作実績</a></li>
+              <li><a href="news.html">お知らせ</a></li>
+              <li><a href="recruit.html">採用情報</a></li>
+              <!--○○.htmlは別のページに飛ぶ #はつけない-->
+              <li><a href="privacy.html">プライバシーポリシー</a></li>
+              <li class="btn"><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+          </nav>
+
+          <div class="sh">
+            小さな端末でのみ表示させたい情報があれば、ここに記入して下さい。
+          </div>
+        </div>
+        <!--/#menubar-->
+      </header>
+
+      <div id="contents">
+        <main>
+          <section class="contact-form-block">
+            <div class="contact-form-inner">
+              <form id="contactForm" action="#" method="post">
+                <h2 class="c">お問い合わせフォーム</h2>
+                <p>
+                  <strong class="color-check">
+					HTML css jS だけで動く簡易版です
+				  </strong>
+
+                <div class="form-row">
+                  <label class="form-label" for="name">
+                    お名前
+                    <span class="required-badge">必須</span>
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="例：山田 花子"
+					required
+                  />
+                </div>
+<!-- required 「必須」という意味。これを入れないと必須にならない。入力しなくても送れちゃう -->
+                <div class="form-row">
+                  <label class="form-label" for="email">
+                    メールアドレス
+                    <span class="required-badge">必須</span>
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="例：info@example.com"
+                    inputmode="email"
+                    autocomplete="email"
+					required
+                  />
+                </div>
+
+				<div class="form-row">
+                  <label class="form-label" for="tel">
+                    電話番号
+                    <span class="required-badge">必須</span>
+                  </label>
+                  <input
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    placeholder="例：000-3000-0000"
+                    inputmode="tel"
+                    autocomplete="tel"
+					required
+                  />
+                </div>
+
+                <div class="form-row">
+                  <label class="form-label" for="message">
+                    お問い合わせ内容
+                    <span class="required-badge">必須</span>
+                  </label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows="10"
+                    placeholder="ご相談内容をご記入ください。"
+					required
+                  ></textarea>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="submit-button">
+                    この内容で送信する
+                  </button>
+                </div>
+              </form>
+            </div>
+          </section>
+        </main>
+      </div>
+
+<!-- 
+タグ・属性	  英語	           日本語	                 役割
+<div>	     division  	      区切り	           レイアウト用のただの箱、クリアファイル
+<form>	     form	      入力用紙・申込書	      入力内容を送信する範囲、封筒のイメージ クリアファイルでは手紙は送れない
+action	     action	     （HTMLでは）送信先	       データをどこへ送るか
+method	     method	           方法	           どの送り方（GET・POST）で送るか -->
+
+
+      <!--/#contents-->
+
+      <footer>
+        <div class="address">
+          <p class="logo">
+            <img src="images/logo.png" alt="ムコクリエイト" />
+          </p>
+          <p>
+            千葉県XXX市XXXXビル１F<br />
+            03-0000-0000
+          </p>
+          <ul class="sns1-parts">
+            <li>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li class="title">メニュー</li>
+            <li><a href="service.html">サービス紹介</a></li>
+            <li><a href="#work">制作実績</a></li>
+            <li><a href="#news">お知らせ</a></li>
+          </ul>
+          <ul>
+            <li class="title">サービス</li>
+            <li><a href="">自衛隊オフィシャルグッズ作成</a></li>
+            <li><a href="">オリジナルグッズ作成</a></li>
+            <li><a href="">イベントグッズ作成</a></li>
+          </ul>
+          <ul>
+            <li class="title">会社情報</li>
+            <li><a href="company.html">会社概要</a></li>
+            <li><a href="">採用情報</a></li>
+            <li><a href="">プライバシーポリシー</a></li>
+          </ul>
+        </div>
+
+        <small>Copyright&copy; 2026 Mukocreate Inc.</small>
+      </footer>
+
+      <!--以下の行はテンプレートの著作。削除しないで下さい。-->
+      <!-- <span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span> -->
+
+      <!--メニューオーバーレイ（メニュー外クリックで閉じる用）-->
+      <div id="menubar-overlay"></div>
+    </div>
+    <!--/#container-->
+
+    <!--ページの上部へ戻るボタン-->
+    <div class="pagetop">
+      <a href="#"><i class="fas fa-angle-double-up"></i></a>
+    </div>
+
+    <!--開閉ボタン（ハンバーガーアイコン）-->
+    <div id="menubar_hdr"><span></span><span></span><span></span></div>
+
+    <!--jQueryの読み込み-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--パララックス（inview）-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+    <script src="js/jquery.inview_set.js"></script>
+
+    <!--このテンプレート専用のスクリプト-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

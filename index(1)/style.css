@@ -1,0 +1,177 @@
+body {
+    margin-bottom: 16px;
+    background-image:url(haikei.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:  cursive; 
+    margin: 0;
+}
+body {
+    text-align: center;
+}
+
+section {
+    padding: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+#header-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#header-content .topimg {
+    border-radius: 40%; width: 200px;
+}
+
+#profile {
+    background-image: url(haikei3.jpg);
+    background-position: center;
+}
+
+#profile .profile-content {
+    display: flex;
+}
+
+#profile img {
+    border-radius: 100%;
+    display: block;
+    border-radius: 40%; width: 200px;
+}
+
+#profile .container {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    background-color: #ffffffde;
+    padding: 50px;
+}
+
+#profile ul li {
+    list-style: none;
+}
+
+
+#profile .profile-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#profile .work-content {
+    display: flex;
+    gap: 40px;
+}
+
+#profile .work-images img {
+    width: 200px;
+}
+
+#profile .profile-text p {
+    font-size: 24px;
+}
+
+#profile .sub-title {
+    font-size: 18px;
+}
+
+#work .work-detail {
+    display: flex;
+}
+
+#work .work-content {
+    width: 50%;
+}
+
+#work .work-text {
+    width: 50%;
+}
+
+/* 画像フェードインアニメーション */
+    .work-images {
+        position: relative; 
+        height: 420px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .slide {
+        list-style: none;
+        padding: 0%;
+        margin: 0;
+    }
+
+    .slide li {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        animation: fade 15s infinite;
+    }
+
+    .slide li:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    .slide li:nth-child(2) {
+        animation-delay: 5s;
+    }
+
+    .slide li:nth-child(3) {
+        animation-delay: 10s;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        display: block;
+    }
+
+    @keyframes fade {
+        0% {
+        opacity: 0;
+        }
+
+        10% {
+        opacity: 1;
+        }
+
+        30% {
+        opacity: 1;
+        }
+
+        40% {
+        opacity: 0;
+        }
+
+        100% {
+        opacity: 0;
+        }
+    }
+
+.contact-link {
+    display: block;
+    width: 200px;
+    margin: auto;
+    text-decoration: none;
+    color: #ff0078;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #ff0078;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.contact-link:hover {
+    background-color: #ff0078;
+    color: #ffffff;
+}
